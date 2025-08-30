@@ -3410,6 +3410,10 @@ kbdcz2:
 kbdcz3:
 #endif
 
+#if OS_COUNTRY == CTRY_RU
+/* nothing to do */
+#endif
+
 /* 206de: 00e03294 */
 /* 306de: 00e0363a */
 /* 104de: 00fc3e6a */
@@ -3751,7 +3755,7 @@ no020_2:
 #if TP_50
 /*
  * SE: (26.10.93)
- * Das gleiche Prozessorunabh„ngig:
+ * Das gleiche Prozessorunabhï¿½ngig:
  * MMU-Deinitialisierung vor Kaltstart.
  */
         lea       coldboo0(pc),a0
